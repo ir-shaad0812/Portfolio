@@ -432,17 +432,20 @@ body {
   display: inline-block;
 }
 
+
+
 .section-title::before {
   content: attr(data-text);
   position: absolute;
-  top: -20px;
+  top: -40px;
   left: 50%;
   transform: translateX(-50%);
   font-size: 8rem;
   font-weight: 900;
-  color: rgba(255, 255, 255, 0.03);
+  color: rgba(255, 255, 255, 0.1);
   z-index: -1;
   white-space: nowrap;
+  user-select: all;
 }
 
 /* About Section */
@@ -1446,8 +1449,19 @@ body {
   padding: 25px;
   z-index: 1001;
   min-width: 220px;
+  opacity: 0;
+  transform: scale(0);
+  transform-origin: top left;
+  transition: all 0.3s ease;
   box-shadow: 0 20px 40px rgba(0,0,0,0.3);
 }
+
+.style-switcher.open {
+  opacity: 1;
+  transform: scale(1);
+}
+
+
 
 .switcher-header {
   display: flex;

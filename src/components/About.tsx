@@ -22,8 +22,8 @@ const About = () => {
 
   return (
     <section className="about">
-      <div className="section-header">
-        <h2 className="section-title" data-text="REACH ME">
+      <div className="section-header ">
+        <h2 className="section-title " data-text="REACH ME">
           ABOUT <span className="highlight">ME</span>
         </h2>
       </div>
@@ -76,8 +76,26 @@ const About = () => {
             </div>
           </div>
           <div className="about-buttons">
-            <button className="cta-button">MY RESUME</button>
-            <button className="cta-button secondary">DOWNLOAD CV</button>
+            <button 
+              className="cta-button"
+              onClick={() => {
+                const resumeSection = document.querySelector('.resume');
+                if (resumeSection) {
+                  resumeSection.scrollIntoView({ behavior: 'smooth' });
+                  window.history.pushState({}, '', '#resume');
+                }
+              }}
+            >
+              MY RESUME
+            </button>
+            <a 
+              href="/Irsad_CV.pdf" 
+              download 
+              className="cta-button secondary"
+              style={{ display: 'inline-flex', alignItems: 'center', textDecoration: 'none' }}
+            >
+              DOWNLOAD CV
+            </a>
           </div>
         </div>
 
