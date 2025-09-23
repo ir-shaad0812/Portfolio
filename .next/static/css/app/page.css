@@ -446,7 +446,7 @@ body {
   font-size: 8rem;
   font-weight: 900;
   color: rgba(255, 255, 255, 0.1);
-  z-index: -1;
+  z-index: 1;
   white-space: nowrap;
   user-select: all;
 }
@@ -1903,6 +1903,88 @@ body {
   cursor: wait;
 }
 
+/* Hobbies Section Styles */
+.hobbies-section {
+  margin: 3rem 0;
+  padding: 1.5rem;
+  background-color: var(--bg-secondary);
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.hobbies-section h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: var(--text-primary);
+  position: relative;
+  display: inline-block;
+}
+
+.hobbies-section h3::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 40%;
+  height: 3px;
+  background-color: var(--primary-color);
+}
+
+.hobbies-intro {
+  margin-bottom: 2rem;
+}
+
+.hobbies-intro p {
+  font-size: 1rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.hobbies-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+  gap: 1.2rem;
+}
+
+.hobby-card {
+  background-color: var(--bg-primary);
+  border-radius: 8px;
+  padding: 1rem 0.5rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hobby-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.hobby-icon {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.hobby-name {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: white;
+}
+
+/* Override background colors with Tailwind classes */
+.bg-purple-500, .bg-green-500, .bg-orange-500, 
+.bg-red-500, .bg-blue-500, .bg-teal-500, 
+.bg-indigo-500, .bg-yellow-500, .bg-green-600, 
+.bg-pink-500, .bg-red-400, .bg-green-400, 
+.bg-teal-600, .bg-blue-600 {
+  color: white;
+}
+
 @media (max-width: 768px) {
   .contact-content.modern {
     grid-template-columns: 1fr;
@@ -1917,6 +1999,10 @@ body {
   }
   
   .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .hobbies-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
