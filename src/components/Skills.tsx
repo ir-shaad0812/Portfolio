@@ -2,7 +2,7 @@
 const Skills = () => {
   const personalSkills = [
     { name: 'Leadership', percentage: 85 },
-    { name: 'Communication', percentage: 90 },
+    { name: 'Communication', percentage: 83 },
     { name: 'Logical Thinking', percentage: 92 },
     { name: 'Decision Making', percentage: 80 },
   ]

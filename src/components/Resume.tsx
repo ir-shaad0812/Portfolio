@@ -28,6 +28,7 @@ const Resume = () => {
   ]
 
   const hobbies = [
+    { name: 'Love to explore:.. ', icon: '💌' },
     { name: 'Coding', icon: '💻' },
     { name: 'Reading', icon: '📚' },
     { name: 'Travel', icon: '✈️' },
@@ -39,7 +40,8 @@ const Resume = () => {
     { name: 'Movies', icon: '🎬' },
     { name: 'Music', icon: '🎵' },
     //Added
-    { name: 'Nature-Loving', icon: '🍃' }, 
+    { name: 'Nature-Loving', icon: '🍃' },
+
   ]
 
   const technicalSkills = [
@@ -119,21 +121,21 @@ const Resume = () => {
               
               <div className="experience-item">
                 <div className="experience-header">
-                  <div className="date-badge">MAR 2022 - PRESENT / KATHMANDU, NEPAL</div>
+                  <div className="date-badge">MAR 2025 - PRESENT / KATHMANDU, NEPAL</div>
                 </div>
-                <h4>LEAPFROG TECHNOLOGY - <span className="highlight">SENIOR SOFTWARE ENGINEER</span></h4>
+                <h4> TECHNOLOGY - <span className="highlight">SENIOR SOFTWARE ENGINEER</span></h4>
                 <ul>
                   <li>Developed Image Slider, Box Collision, Ant Smasher, Car Lane using DOM & canvas in plain javascript.</li>
-                  <li>Developed a flappy bird game using ES6 javascript.</li>
-                  <li>Developed a resume builder using plain javascript.</li>
+                  <li>Developed a HMS System using modern MERN.</li>
+                  <li>Developed a resume and Portfolio Strong .</li>
                 </ul>
               </div>
 
               <div className="experience-item">
                 <div className="experience-header">
-                  <div className="date-badge">FEB 2021 - PRESENT / RAJBIRAJ, NEPAL</div>
+                  <div className="date-badge">FEB 2024 - PRESENT / Itahari, NEPAL</div>
                 </div>
-                <h4>Itahari INTERNATIONAL COLLEGE - <span className="highlight">ACADEMIC TUTOR</span></h4>
+                <h4>ITAHARI INTERNATIONAL COLLEGE - <span className="highlight">ACADEMIC TUTOR</span></h4>
                 <ul>
                   <li>Responsible for combining my academic experience and skills to teach a varied and stimulating IT curriculum.</li>
                   <li>Teach undergraduate students concepts of core java and inspired them to translate their academic skills to solve real world problems.</li>
@@ -160,16 +162,16 @@ const Resume = () => {
               
               <div className="education-item">
                 <h4><span className="highlight">Islington College</span> - Master in Data Analytics (MSc IT)</h4>
-                <p>Feb 2023 - present / Kathmandu, Nepal</p>
+                <p>Feb 2026 - present / Kathmandu, Nepal</p>
               </div>
 
               <div className="education-item">
                 <h4><span className="highlight">Itahari International College</span> - Bsc (Hons) Computing</h4>
-                <p>Oct 2023 - Oct 2026 / Rajbiraj, Nepal</p>
+                <p>Oct 2024 - Oct 2026 / Itahari, Nepal</p>
               </div>
 
               <div className="education-item">
-                <h4><span className="highlight">Sikshadeep  College </span> - +2 Science</h4> 
+                <h4><span className="highlight">Sikshadeep College </span> - +2 Science</h4> 
                 <p>2020 - 2022 / Biratnagar, Nepal</p>
               </div>
             </div>

@@ -5,7 +5,10 @@ import dynamic from "next/dynamic";
 import Header from "./components/Header";
 import Sidebar from "./components/Sidebar";
 import Hero from "./components/Hero";
-import "./App.css";
+import "./App.css"; // In src/App.tsx This should already be there
+
+// import "../styles/main.css";
+
 
 // Improved lazy loading with Next.js dynamic imports
 // This adds prefetching capabilities and better code splitting

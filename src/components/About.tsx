@@ -132,18 +132,48 @@ const About = () => {
           ))}
         </div>
         
+        <div className="hobbies-section">
+          <h3>HOBBIES & INTERESTS</h3>
+          <div className="hobbies-intro">
+            <p>Beyond coding, I enjoy a variety of activities that keep me inspired and creative.</p>
+          </div>
+          <div className="hobbies-grid">
+            {[
+              { name: 'Painting', color: 'bg-purple-500', icon: '🎨' },
+              { name: 'Hiking', color: 'bg-green-500', icon: '🥾' },
+              { name: 'Photography', color: 'bg-orange-500', icon: '📷' },
+              { name: 'Music', color: 'bg-red-500', icon: '🎵' },
+              { name: 'Traveling', color: 'bg-blue-500', icon: '✈️' },
+              { name: 'Fitness', color: 'bg-teal-500', icon: '💪' },
+              { name: 'Reading', color: 'bg-indigo-500', icon: '📚' },
+              { name: 'Cooking', color: 'bg-yellow-500', icon: '🍳' },
+              { name: 'Gardening', color: 'bg-green-600', icon: '🌱' },
+              { name: 'Writing', color: 'bg-pink-500', icon: '✍️' },
+              { name: 'Dancing', color: 'bg-red-400', icon: '💃' },
+              { name: 'Cycling', color: 'bg-green-400', icon: '🚴' },
+              { name: 'Camping', color: 'bg-teal-600', icon: '🏕️' },
+              { name: 'Gaming', color: 'bg-blue-600', icon: '🎮' }
+            ].map((hobby, index) => (
+              <div key={index} className={`hobby-card ${hobby.color} hover:scale-105 transition-transform`}>
+                <span className="hobby-icon">{hobby.icon}</span>
+                <span className="hobby-name">{hobby.name}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+        
         <div className="tech-stack-section">
           <h3>TECHNOLOGIES I WORK WITH</h3>
           <div className="tech-categories">
             <div className="tech-category">
-              <h4>Frontend</h4>
+              <h4>Frontend </h4>
               <div className="tech-list">
                 <div className="tech-item">React</div>
                 <div className="tech-item">Next.js</div>
-                <div className="tech-item">Vue</div>
-                <div className="tech-item">Angular</div>
+                <div className="tech-item">HTML</div>
+                <div className="tech-item">Java</div>
                 <div className="tech-item">Tailwind</div>
-                <div className="tech-item">SASS</div>
+                <div className="tech-item">SASS </div>
               </div>
             </div>
             
@@ -171,10 +201,11 @@ const About = () => {
             </div>
             
             <div className="tech-category">
-              <h4>DevOps</h4>
+              <h4>  Exploring </h4>
               <div className="tech-list">
                 <div className="tech-item">Docker</div>
                 <div className="tech-item">AWS</div>
+                <div className="tech-item">DevOps Engineer</div>
                 <div className="tech-item">CI/CD</div>
                 <div className="tech-item">Kubernetes</div>
                 <div className="tech-item">GitHub</div>

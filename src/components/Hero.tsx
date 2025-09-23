@@ -30,7 +30,7 @@ const Hero = ({ setActiveSection }: HeroProps) => {
             A results-driven Senior Software Engineer with over 3+  years of experience
             in full-stack development, cloud computing, and leadership. I specialize in
             designing and delivering scalable, user-centric solutions using modern
-            technologies like React, Node.js, Golang, AWS, and Kubernetes. From
+            technologies like React, Node.js, Next.js, AWS, and Docker and exploring DevOps practices. From
             leading cross-functional teams to mentoring aspiring developers, I thrive
             on solving complex challenges and building innovative products.
           </p>
