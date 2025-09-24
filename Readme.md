@@ -23,8 +23,6 @@ This is my personal portfolio website showcasing my skills, projects, and profes
 
 - `/app`: Main Next.js application
   - `/components`: Page-specific components
-- `/components`: Reusable UI components
-  - `/ui`: Shadcn UI components
 - `/public`: Static assets including images and CV
 - `/lib`: Utility functions
 
